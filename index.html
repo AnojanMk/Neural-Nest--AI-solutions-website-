@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuralNest - Where Intelligence Finds Its Home</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta
+      name="description"
+      content="NeuralNest provides cutting-edge AI solutions, machine learning services, and neural network consulting for modern businesses."
+    />
+    <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Neural Networks, Data Analytics, Tech Solutions" />
+    <meta name="author" content="NeuralNest" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* Fallback styles in case CSS doesn't load */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Spinner -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <span class="brand-text">Neural<span class="accent">Nest</span></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solutions">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <canvas id="neuralCanvas"></canvas>
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <h1 class="hero-title">
+              <span class="gradient-text">Where Intelligence</span><br />
+              <span class="gradient-text">Finds Its Home</span>
+            </h1>
+            <p class="hero-subtitle">Empowering businesses with cutting-edge AI solutions and neural network technologies</p>
+            <div class="hero-buttons mt-5">
+              <a href="#services" class="btn btn-primary btn-lg me-3">Get Started</a>
+              <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-particles"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-subtitle">What We Offer</span>
+          <h2 class="section-title">Our AI Services</h2>
+          <p class="section-description">Comprehensive AI solutions tailored to your business needs</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="service-card-inner">
+                <div class="service-card-front">
+                  <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <h3>AI Consulting</h3>
+                  <p>Strategic AI implementation for business transformation</p>
+                </div>
+                <div class="service-card-back">
+                  <h3>AI Consulting</h3>
+                  <ul>
+                    <li>AI Strategy Development</li>
+                    <li>Technology Assessment</li>
+                    <li>Implementation Roadmap</li>
+                    <li>ROI Analysis</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-light">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-card-inner">
+                <div class="service-card-front">
+                  <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <h3>Machine Learning</h3>
+                  <p>Advanced ML models for predictive analytics</p>
+                </div>
+                <div class="service-card-back">
+                  <h3>Machine Learning</h3>
+                  <ul>
+                    <li>Predictive Modeling</li>
+                    <li>Pattern Recognition</li>
+                    <li>Natural Language Processing</li>
+                    <li>Computer Vision</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-light">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-card-inner">
+                <div class="service-card-front">
+                  <div class="service-icon">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                  <h3>Neural Networks</h3>
+                  <p>Deep learning solutions for complex problems</p>
+                </div>
+                <div class="service-card-back">
+                  <h3>Neural Networks</h3>
+                  <ul>
+                    <li>Deep Learning</li>
+                    <li>Neural Architecture Design</li>
+                    <li>Model Optimization</li>
+                    <li>Transfer Learning</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-light">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-item">
+              <i class="fas fa-project-diagram"></i>
+              <h2 class="counter" data-target="500">0</h2>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <h2 class="counter" data-target="300">0</h2>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stat-item">
+              <i class="fas fa-clock"></i>
+              <h2 class="counter" data-target="10000">0</h2>
+              <p>Hours of Development</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="stat-item">
+              <i class="fas fa-trophy"></i>
+              <h2 class="counter" data-target="25">0</h2>
+              <p>Awards Won</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section with Realistic AI Solution Images -->
+    <section id="solutions" class="solutions-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-subtitle">Our Solutions</span>
+          <h2 class="section-title">Innovative AI Solutions</h2>
+          <p class="section-description">Cutting-edge technology solutions for modern challenges</p>
+        </div>
+
+        <!-- Solutions Grid -->
+        <div class="row g-4">
+          <!-- Solution 1 - AI Analytics Platform -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="solution-card">
+              <div class="solution-image">
+                <!-- AI Analytics Dashboard Image -->
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="AI Analytics Dashboard"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="solution-overlay">
+                  <span class="solution-category">Analytics</span>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <i class="fas fa-chart-pie solution-icon"></i>
+                  <h3>AI Analytics Platform</h3>
+                </div>
+                <p>Real-time data analysis and visualization with predictive insights for data-driven decision making.</p>
+
+                <!-- Key Features -->
+                <div class="solution-features">
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Real-time Processing</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Predictive Analytics</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Interactive Dashboards</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Custom Reports</span>
+                  </div>
+                </div>
+
+                <!-- Metrics -->
+                <div class="solution-metrics">
+                  <div class="metric">
+                    <span class="metric-value">99.9%</span>
+                    <span class="metric-label">Accuracy</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">50ms</span>
+                    <span class="metric-label">Latency</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">1M+</span>
+                    <span class="metric-label">Data Points</span>
+                  </div>
+                </div>
+
+                <div class="solution-footer">
+                  <a href="#" class="btn btn-solution">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <span class="solution-badge">Popular</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution 2 - Smart Automation -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="solution-card">
+              <div class="solution-image">
+                <!-- Smart Automation Robotics Image -->
+                <img
+                  src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="Smart Automation Robotics"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="solution-overlay">
+                  <span class="solution-category">Automation</span>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <i class="fas fa-robot solution-icon"></i>
+                  <h3>Smart Automation</h3>
+                </div>
+                <p>Intelligent process automation for enhanced efficiency and reduced operational costs.</p>
+
+                <!-- Key Features -->
+                <div class="solution-features">
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Workflow Automation</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>RPA Integration</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Intelligent OCR</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Process Mining</span>
+                  </div>
+                </div>
+
+                <!-- Metrics -->
+                <div class="solution-metrics">
+                  <div class="metric">
+                    <span class="metric-value">80%</span>
+                    <span class="metric-label">Cost Reduction</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">24/7</span>
+                    <span class="metric-label">Operation</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Human Error</span>
+                  </div>
+                </div>
+
+                <div class="solution-footer">
+                  <a href="#" class="btn btn-solution">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <span class="solution-badge">Trending</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution 3 - Cloud AI Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="solution-card">
+              <div class="solution-image">
+                <!-- Cloud Computing Infrastructure Image -->
+                <img
+                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
+                  alt="Cloud AI Infrastructure"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="solution-overlay">
+                  <span class="solution-category">Cloud</span>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <i class="fas fa-cloud-upload-alt solution-icon"></i>
+                  <h3>Cloud AI Services</h3>
+                </div>
+                <p>Scalable AI solutions deployed on cloud infrastructure with enterprise-grade security.</p>
+
+                <!-- Key Features -->
+                <div class="solution-features">
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Scalable Architecture</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Multi-cloud Support</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Auto-scaling</span>
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fas fa-check-circle"></i>
+                    <span>99.99% Uptime</span>
+                  </div>
+                </div>
+
+                <!-- Metrics -->
+                <div class="solution-metrics">
+                  <div class="metric">
+                    <span class="metric-value">10K+</span>
+                    <span class="metric-label">API Calls/sec</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">99.99%</span>
+                    <span class="metric-label">Uptime</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">50+</span>
+                    <span class="metric-label">Regions</span>
+                  </div>
+                </div>
+
+                <div class="solution-footer">
+                  <a href="#" class="btn btn-solution">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <span class="solution-badge">Enterprise</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Solutions Row (Optional) -->
+        <div class="row g-4 mt-4">
+          <!-- Solution 4 - Computer Vision -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="400">
+            <div class="solution-card">
+              <div class="solution-image">
+                <img
+                  src="https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1149&q=80"
+                  alt="Computer Vision"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="solution-overlay">
+                  <span class="solution-category">Vision</span>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <i class="fas fa-eye solution-icon"></i>
+                  <h3>Computer Vision</h3>
+                </div>
+                <p>Advanced image and video analysis for object detection, facial recognition, and scene understanding.</p>
+                <div class="solution-features">
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Object Detection</div>
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Face Recognition</div>
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Scene Analysis</div>
+                </div>
+                <div class="solution-footer">
+                  <a href="#" class="btn btn-solution">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution 5 - NLP Solutions -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="solution-card">
+              <div class="solution-image">
+                <img
+                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="NLP Solutions"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="solution-overlay">
+                  <span class="solution-category">NLP</span>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <i class="fas fa-language solution-icon"></i>
+                  <h3>NLP Solutions</h3>
+                </div>
+                <p>Natural Language Processing for sentiment analysis, chatbots, and text understanding.</p>
+                <div class="solution-features">
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Sentiment Analysis</div>
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Chatbots</div>
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Text Classification</div>
+                </div>
+                <div class="solution-footer">
+                  <a href="#" class="btn btn-solution">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution 6 - Predictive Maintenance -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="600">
+            <div class="solution-card">
+              <div class="solution-image">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Predictive Maintenance"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="solution-overlay">
+                  <span class="solution-category">Maintenance</span>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <i class="fas fa-chart-line solution-icon"></i>
+                  <h3>Predictive Maintenance</h3>
+                </div>
+                <p>AI-powered equipment monitoring and failure prediction to reduce downtime.</p>
+                <div class="solution-features">
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Real-time Monitoring</div>
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Failure Prediction</div>
+                  <div class="feature-tag"><i class="fas fa-check-circle"></i> Asset Optimization</div>
+                </div>
+                <div class="solution-footer">
+                  <a href="#" class="btn btn-solution">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Solutions Button -->
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="#" class="btn btn-primary btn-lg">View All Solutions <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <!-- About Section with Realistic Office and Team Images -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Column - Image Gallery -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="about-image-gallery">
+              <!-- Main Image - Modern AI Office/Lab -->
+              <div class="about-main-image">
+                <img
+                  src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="NeuralNest Modern AI Laboratory"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="image-overlay">
+                  <span class="overlay-text">Innovation Hub</span>
+                </div>
+              </div>
+
+              <!-- Small Image Grid - Team Collaboration -->
+              <div class="about-image-grid">
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Team Collaboration"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="AI Development"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Data Analysis"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                    alt="Team Meeting"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- Experience Badge -->
+              <div class="experience-badge">
+                <span class="years">10+</span>
+                <span class="text">Years of<br />Innovation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Content -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="about-content">
+              <span class="section-subtitle">About Us</span>
+              <h2 class="about-title">Leading the <span class="gradient-text">AI Revolution</span></h2>
+              <p class="about-description">
+                NeuralNest is at the forefront of artificial intelligence innovation, helping businesses harness the power of AI to transform their
+                operations and drive growth. Our state-of-the-art facilities and world-class team deliver cutting-edge solutions that redefine what's
+                possible.
+              </p>
+
+              <!-- Features with Icons -->
+              <div class="about-features">
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="fas fa-microchip"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Cutting-edge Technology</h4>
+                    <p>
+                      We leverage the latest AI technologies including Deep Learning, Neural Networks, and advanced ML frameworks to build robust
+                      solutions.
+                    </p>
+                    <ul class="feature-list">
+                      <li><i class="fas fa-check-circle"></i> TensorFlow & PyTorch</li>
+                      <li><i class="fas fa-check-circle"></i> Custom Neural Architectures</li>
+                      <li><i class="fas fa-check-circle"></i> Cloud AI Integration</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="fas fa-users-cog"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Expert Team</h4>
+                    <p>Our team consists of PhDs, industry veterans, and award-winning researchers from top institutions worldwide.</p>
+                    <ul class="feature-list">
+                      <li><i class="fas fa-check-circle"></i> 50+ AI Specialists</li>
+                      <li><i class="fas fa-check-circle"></i> 100+ Combined Research Papers</li>
+                      <li><i class="fas fa-check-circle"></i> Former FAANG Engineers</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Proven Results</h4>
+                    <p>Track record of successful AI implementations across Fortune 500 companies and innovative startups.</p>
+                    <ul class="feature-list">
+                      <li><i class="fas fa-check-circle"></i> 95% Client Satisfaction</li>
+                      <li><i class="fas fa-check-circle"></i> 300+ Successful Projects</li>
+                      <li><i class="fas fa-check-circle"></i> 40% Avg. Efficiency Gain</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Company Stats -->
+              <div class="about-stats">
+                <div class="stat-box">
+                  <h3>500+</h3>
+                  <p>Projects Delivered</p>
+                </div>
+                <div class="stat-box">
+                  <h3>50+</h3>
+                  <p>AI Experts</p>
+                </div>
+                <div class="stat-box">
+                  <h3>10+</h3>
+                  <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                  <h3>98%</h3>
+                  <p>Success Rate</p>
+                </div>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="about-cta">
+                <a href="#contact" class="btn btn-primary">Start Your AI Journey</a>
+                <a href="#services" class="btn btn-outline-light">Explore Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- Team Section with Expert Profile Images -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-subtitle">Our Team</span>
+          <h2 class="section-title">Meet the Experts</h2>
+          <p class="section-description">Brilliant minds behind our AI innovations</p>
+        </div>
+
+        <!-- Team Members Grid -->
+        <div class="row g-4">
+          <!-- Team Member 1 - Dr. Sarah Smith -->
+          <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="100">
+            <div class="team-card">
+              <div class="team-image">
+                <!-- Professional headshot of female AI expert -->
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                  alt="Dr. Sarah Smith - Chief AI Officer"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="team-social">
+                  <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>Dr. Sarah Smith</h3>
+                <p>Chief AI Officer</p>
+                <div class="team-expertise">
+                  <span class="badge">PhD in Machine Learning</span>
+                  <span class="badge">15+ years experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 - John Doe -->
+          <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="200">
+            <div class="team-card">
+              <div class="team-image">
+                <!-- Professional headshot of male ML engineer -->
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="John Doe - Lead ML Engineer"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="team-social">
+                  <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>John Doe</h3>
+                <p>Lead ML Engineer</p>
+                <div class="team-expertise">
+                  <span class="badge">MS in Computer Science</span>
+                  <span class="badge">10+ years experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 - Emily Chen -->
+          <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="300">
+            <div class="team-card">
+              <div class="team-image">
+                <!-- Professional headshot of female neural network architect -->
+                <img
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80"
+                  alt="Emily Chen - Neural Network Architect"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="team-social">
+                  <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>Emily Chen</h3>
+                <p>Neural Network Architect</p>
+                <div class="team-expertise">
+                  <span class="badge">PhD in Neural Networks</span>
+                  <span class="badge">8+ years experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 4 - Mike Johnson -->
+          <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="400">
+            <div class="team-card">
+              <div class="team-image">
+                <!-- Professional headshot of male AI solutions architect -->
+                <img
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Mike Johnson - AI Solutions Architect"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <div class="team-social">
+                  <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>Mike Johnson</h3>
+                <p>AI Solutions Architect</p>
+                <div class="team-expertise">
+                  <span class="badge">MBA in Technology</span>
+                  <span class="badge">12+ years experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-description">Ready to transform your business with AI? Let's talk.</p>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Visit Us</h4>
+                  <p>123 AI Boulevard, Silicon Valley, CA 94025</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email Us</h4>
+                  <p>contact@neuralnest.ai</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Call Us</h4>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <form id="contactForm" class="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email" required />
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control" placeholder="Subject" />
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-info">
+              <h3 class="footer-logo">Neural<span class="accent">Nest</span></h3>
+              <p>Where Intelligence Finds Its Home</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">AI Consulting</a></li>
+                <li><a href="#">Machine Learning</a></li>
+                <li><a href="#">Neural Networks</a></li>
+                <li><a href="#">Data Analytics</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-newsletter">
+              <h4>Newsletter</h4>
+              <p>Subscribe to get updates on AI trends and news</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required />
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 NeuralNest. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
